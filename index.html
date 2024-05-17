@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Zelené střechy</title>
   </head>
   <body class="font-Raleway">
-    <header class="flex px-24 items-center justify-between fixed z-50 top-0 h-24 w-full shadow-2xl bg-white">
-        <div>Logo</div>
+    <header class="flex px-4 sm:px-20 items-center justify-between fixed z-50 top-0 h-24 w-full shadow-2xl bg-white gap-8">
+        <div class="w-80"><img id="logo" alt=""></div>
         <div>
-            <ul class="flex gap-8 font-light uppercase text-2xl text-[#0f121b] cursor-pointer">
-                <a href="#onas"><li class="after:block after:border-b after:border-[#84cc16] after:scale-0 after:transition-all hover:after:scale-100">O nás</li></a>
-                <a href="#zelenestrechy"><li class="after:block after:border-b after:border-[#84cc16] after:scale-0 after:transition-all hover:after:scale-100">Zelené střechy</li></a>
-                <a href="#refs"><li class="after:block after:border-b after:border-[#84cc16] after:scale-0 after:transition-all hover:after:scale-100">Píšete nám</li></a>
-                <a href="#contactform"><li class="after:block after:border-b after:border-[#84cc16] after:scale-0 after:transition-all hover:after:scale-100">Kontakt</li></a>
+            <ul class="flex gap-4 sm:gap-8 font-light uppercase text-2xl text-[#0f121b] cursor-pointer items-center">
+                <div class="hidden lg:flex gap-8  items-center">
+                    <a href="#onas"><li class="w-min xl:w-full after:block after:border-b after:border-[#84cc16] after:scale-0 after:transition-all hover:after:scale-100">O nás</li></a>
+                    <a href="#zelenestrechy"><li class="w-min xl:w-full after:block after:border-b after:border-[#84cc16] after:scale-0 after:transition-all hover:after:scale-100">Zelené střechy</li></a>
+                    <a href="#refs"><li class="w-min xl:w-full after:block after:border-b after:border-[#84cc16] after:scale-0 after:transition-all hover:after:scale-100">Píšete nám</li></a>
+                    <a href="#contactform"><li class="w-min xl:w-full after:block after:border-b after:border-[#84cc16] after:scale-0 after:transition-all hover:after:scale-100">Kontakt</li></a>
+                </div>
                 <a href="https://www.instagram.com/izolacefuk/" target="_blank" rel="noopener noreferrer"><li class="flex w-8 transition-all hover:opacity-50"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" fill="#0f121b"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" fill="#0f121b"/></svg></li></a>
                 <a href="https://www.facebook.com/izolacefuk/?locale=cs_CZ" target="_blank" rel="noopener noreferrer"><li class="flex w-8 transition-all hover:opacity-50"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/></svg></li></a>
                 <a href="tel:+420773369966"><li class="flex w-8 transition-all hover:opacity-50"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg></li></a>
@@ -23,66 +26,53 @@
         </div>
     </header>
     <div class="w-full h-screen relative z-10">
-        <h1 class="absolute flex left-1/2 -translate-x-1/2 z-50 top-1/4 text-[#84cc16] font-semibold text-6xl uppercase p-24 rounded-xl bg-gray-500/50 backdrop-blur-sm">Kus přírody i na Vaší střeše!</h1>
-        <img id="foto1" alt="" class="w-full h-full object-fill">
+        <h1 class="absolute flex text-center left-1/2 -translate-x-1/2 z-50 top-1/4 tracking-tight text-[#84cc16] font-semibold text-6xl uppercase p-12 sm:p-20 rounded-xl bg-gray-500/50 backdrop-blur-sm">Kus přírody na Vaší střeše!</h1>
+        <img id="foto1" alt="" class="w-full h-full object-cover">
     </div>
-    <h1 id="onas" class="px-[10vw] pt-28 text-[#84cc16] font-semibold  text-6xl uppercase">O nás</h1>
+    <section class="flex flex-col">
+        <h1 id="onas" class="px-[10vw] pt-28 text-[#84cc16] font-semibold  text-6xl uppercase self-center sm:self-start">O nás</h1>
+        <p class="flex self-center w-2/3 pt-10 text-center font-light text-xl">Jsme Izolace Fuk a naším posláním je být prospěšní lidem v oblasti energetických úspor a zlepšování komfortu bydlení. Pomohli jsme bezmála třem tisícům zákazníků výrazně zlepšit tepelnou pohodu jejich bydlení, ale naše cíle jsou ještě mnohem ambicióznější. Chceme ještě více pracovat na tom, aby Izolace Fuk byly synonymem pro kvalitu služeb, odbornost, férovost a prvotřídní zákaznický přístup.</p>
+    </section>
 
     <section id="zelenestrechy" class="flex flex-col">
-        <h1 class="px-[10vw] pt-28 text-[#84cc16] font-semibold  text-6xl uppercase">Zelené střechy</h1>
+        <h1 class="px-[10vw] pt-28 text-[#84cc16] font-semibold  text-6xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Zelené střechy</h1>
         <p class="flex self-center w-2/3 pt-10 text-center font-light text-xl">Zelené střechy se na rodinných domech, bytových domech, firemních objektech a o stavbách veřejné správy objevují čím dál častěji. Nejen, že skvěle vypadají, ale zároveň nabízí hned několik benefitů, které výrazným způsobem napomáhají ke zlepšení komfortu a kvality bydlení. A jaké to jsou? Nabízíme Vám výčet těch nejdůležitějších.</p>
-        <div class="container w-1/2 flex self-center py-4">
+        <div class="container w-11/12 sm:w-1/2 flex self-center py-4">
             <img id="foto2" alt="" class="w-full h-full rounded-xl">
         </div>
     </section>
     <section class="flex flex-col">
-        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase">Zbavte se přehřívání domu.</h1>
+        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Zbavte se přehřívání domu.</h1>
         <p class="flex self-center w-2/3 pt-10 text-center font-light text-xl">Travní porost na střeše Vašeho domu zásadním způsobem napomáhá k ochlazování střechy, respektive obytného prostoru pod střechou. Své opodstatnění tak zelená střecha najde především na pultových střechách, pod kterými se majitelé domů často potýkají s nepříjemným letním přehříváním stavby.</p>
     </section>
     <section class="flex flex-col">
-        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase">Snížení nákladů na vytápění.</h1>
+        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Snížení nákladů na vytápění.</h1>
         <p class="flex self-center w-2/3 pt-10 text-center font-light text-xl">Zelená střecha pomáhá snížit náklady na vytápění. V kombinaci s kvalitní izolací, ještě o to více. Každá další vrstva ve střešním souvrství, zabraňuje dalšímu úniku tepla, a i travní porost je tedy dobrým pomocníkem.</p>
     </section>
     <section class="flex flex-col">
-        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase">Ochlazuje okolí domu.</h1>
+        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Ochlazuje okolí domu.</h1>
         <p class="flex self-center w-2/3 pt-10 text-center font-light text-xl">Věděli jste, že zelená střecha zvyšuje účinnost solárních panelů až o 15 procent? Je to díky ochlazování okolí panelů i celého domu, díky čemuž nedochází k nadměrnému zahřívání a tím má fotovoltaika větší účinnost.</p>
     </section>
     <section class="flex flex-col">
-        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase">Zadržuje dešťovou vodu.</h1>
+        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Zadržuje dešťovou vodu.</h1>
         <p class="flex self-center w-2/3 pt-10 text-center font-light text-xl">Dešťovou vodu lze v domě a jeho okolí smysluplně využívat, ale v případě, že to není možné, pak právě zelená střecha dopomůže s jejím zadržováním. Dokáže pojmout až 6O litrů vody na metr čtvereční, která by jinak skončila v kanalizaci a následně v době, kdy neprší, tato voda pomáhá zvlhčovat a osvěžovat vzduch v okolí domu. Zelená střecha navíc zachytává prachové částice ze vzduchu.</p>
     </section>
     <section class="flex flex-col">
-        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase">Ochrání střešní fólii a nevyžaduje údržbu</h1>
+        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Ochrání střešní fólii a nevyžaduje údržbu</h1>
         <p class="flex self-center w-2/3 pt-10 text-center font-light text-xl">Díky zelené střeše výrazně prodloužíte životnost podkladové střešní krytiny, ať už se jedná o PVC fólii nebo asfaltovou lepenku. Extenzivní zelená střecha z rozchodníků je navíc bezúdržbová, porost je suchomilný, a tak není nutné střechu ani zalévat při delším období bez deště. Střecha navíc v průběhu roku mění svoji barvu v závislosti na ročním období.</p>
     </section>
     <section class="flex flex-col">
-        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase">Zlepšuje životní prostředí</h1>
+        <h1 class="px-[10vw] pt-28 text-gray-500 font-semibold  text-5xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Zlepšuje životní prostředí</h1>
         <p class="flex self-center w-2/3 pt-10 text-center font-light text-xl">Pro růst jakékoliv flóry je důležité CO2. Oxid uhličitý je „potrava“ pro vegetaci a zelená střecha tedy pomáhá životnímu prostředí snižováním CO2 ve vzduchu.</p>
     </section>
-    <h1 id="refs" class="px-[10vw] py-28 text-[#84cc16] font-semibold  text-6xl uppercase">Píšete nám</h1>
+    <div class="flex justify-center sm:justify-start">
+        <h1 id="refs" class="px-[10vw] py-28 text-[#84cc16] font-semibold  text-6xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Píšete nám</h1>
+    </div>
 
-<div class="swiper w-3/5 bg-gray-500/15 backdrop-blur-sm py-6 px-12 rounded-3xl" style="filter: drop-shadow(5px 5px 10px #84cc16);">
+<div id="swiper" class="swiper !flex min-h-80 lg:w-2/5 w-11/12 bg-gray-500/15 backdrop-blur-sm  px-12 rounded-3xl items-center" style="filter: drop-shadow(5px 5px 10px #84cc16);">
     <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
+    <div id="swiper-wrapper" class="swiper-wrapper flex">
       <!-- Slides -->
-      <div class="swiper-slide w-44">
-        <div class="w-full h-96 p-20 flex flex-col justify-center">
-            <span class="text-[#84cc16] text-xl mb-4">Jan Novák</span>
-            <div class="font-light text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ullam iste adipisci asperiores quia voluptatem mollitia veniam, similique at assumenda tempore modi repellat eaque eveniet unde necessitatibus obcaecati optio consequuntur?</div>
-        </div>
-      </div>
-      <div class="swiper-slide w-44">
-        <div class="w-full h-96 p-20 flex flex-col justify-center">
-            <span class="text-[#84cc16] text-xl mb-4">Jan Novák</span>
-            <div class="font-light text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ullam iste adipisci asperiores quia voluptatem mollitia veniam, similique at assumenda tempore modi repellat eaque eveniet unde necessitatibus obcaecati optio consequuntur?</div>
-        </div>
-      </div>
-      <div class="swiper-slide w-44">
-        <div class="w-full h-96 p-20 flex flex-col justify-center">
-            <span class="text-[#84cc16] text-xl mb-4">Jan Novák</span>
-            <div class="font-light text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae ullam iste adipisci asperiores quia voluptatem mollitia veniam, similique at assumenda tempore modi repellat eaque eveniet unde necessitatibus obcaecati optio consequuntur?</div>
-        </div>
-      </div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -92,13 +82,13 @@
     <div class="swiper-button-next"></div>
 </div>
 <section class="flex flex-col">
-    <h1 class="px-[10vw] py-28 text-[#84cc16] font-semibold  text-6xl uppercase">Poptejte nás</h1>
+    <h1 class="px-[10vw] py-28 text-[#84cc16] font-semibold  text-6xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Poptejte nás</h1>
     <p class="flex self-center w-2/3 text-center font-light text-xl">Zaujala Vás zelená střecha? Vyplňte kontaktní formulář a zašlete nám Vaši poptávku. Následně Vás bude kontaktovat náš technik, který si s Vámi domluví bezplatnou a nezávaznou konzultaci na Vašem domě, kde Vám představí dostupná řešení, zodpoví Vaše dotazy, střechu zaměří a následně navrhne optimální a funkční systém zelené střechy ušitý Vašemu domu na míru. Můžete nám také rovnou zavolat na telefon</p>
 </section>
 <section id="contactform" class="flex flex-col px-[10vw] mb-14">
-    <h1 class="py-28 text-[#84cc16] font-semibold  text-6xl uppercase">Kontakt</h1>
-    <div class="grid grid-cols-2">
-        <div class="flex flex-col w-2/3 rounded-lg p-4 tracking-widest" style="box-shadow: 0 10px 40px rgba(82, 147, 203, .2);">
+    <h1 class="py-28 text-[#84cc16] font-semibold  text-6xl uppercase self-center sm:self-start">Kontakt</h1>
+    <div class="grid grid-cols-1 justify-items-center gap-24 xl:justify-items-start xl:grid-cols-2">
+        <div class="flex flex-col w-full md:w-2/3 rounded-lg p-4 tracking-widest" style="box-shadow: 0 10px 40px rgba(82, 147, 203, .2);">
             <span class="text-sm text-[#2f3e68] font-semibold mb-7 outline-none">MÁTE ZÁJEM O NAŠE SLUŽBY?<br>
                 KONTAKTUJTE NÁS!</span>
         <form action="" method="post" class="flex flex-col">
@@ -230,9 +220,9 @@
 </section>
 <section id="mapbanner" class="w-full h-[25vh] bg-center bg-no-repeat bg-[#1c1b20]" style="background-size: auto 100%;">
 </section>
-<h1 class="px-[10vw] pt-28 text-[#84cc16] font-semibold  text-6xl uppercase">Náš tým</h1>
-<div class="grid grid-cols-4 px-[15vw] mt-10">
-    <div class="flex flex-col items-center">
+<h1 class="flex px-[10vw] pt-28 text-[#84cc16] font-semibold  text-6xl uppercase sm:w-auto text-center justify-center sm:justify-start">Náš tým</h1>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-12 xl:grid-cols-4 px-[15vw] mt-10">
+    <div class="flex flex-col items-center self-end">
         <div class="flex w-24 h-24 rounded-full overflow-hidden mb-6">
             <img alt="Jiří Scheinkönig" id="scheinkonig" class="w-full h-max relative -top-2">
         </div>
@@ -265,9 +255,9 @@
         <span class="text-base">+420 773 369 966</span>
     </div>
 </div>
-<section class="">
-    <h1 class="px-[10vw] pt-28 text-[#84cc16] font-semibold  text-6xl uppercase">Pobočky</h1>
-<div class="px-[15vw] grid grid-cols-4 mt-10">
+<section class="flex flex-col">
+    <h1 class="flex px-[10vw] pt-28 text-[#84cc16] font-semibold  text-6xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Pobočky</h1>
+<div class="px-[15vw] grid grid-cols-1 sm:grid-cols-2 gap-12 xl:grid-cols-4 mt-10">
     <div class="flex flex-col items-center">
         <span class="text-2xl font-semibold">Karlovarský Kraj</span>
         <span><br>5. Května 714<br>
@@ -293,7 +283,7 @@
     </div>
 </div>
 </section>
-<footer class="flex justify-end items-center mt-32 h-12 gap-2 px-24">
+<footer class="flex justify-end items-center mt-32 h-12 gap-2 px-10 sm:px-24">
     <div class="flex">Web vytvořili:</div>
     <span class="w-32 py-2 mx-3"><a href="https://forthsite.cz/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 98.889">
         <defs>
