@@ -8,8 +8,9 @@
     <title>Zelené střechy</title>
   </head>
   <body class="font-Raleway">
+    <script src="bundle.js"></script>
     <header class="flex px-4 sm:px-20 items-center justify-between fixed z-50 top-0 h-24 w-full shadow-2xl bg-white gap-8">
-        <div class="w-72 sm:w-80"><img id="logo" alt=""></div>
+        <div class="w-72 sm:w-80"><img loading='lazy'id="logo" alt=""></div>
         <div>
             <ul class="flex gap-4 sm:gap-8 font-light uppercase text-2xl text-[#0f121b] cursor-pointer items-center">
                 <div class="hidden lg:flex gap-8  items-center">
@@ -21,13 +22,13 @@
                 <li class="flex w-8 transition-all hover:opacity-50"><a href="https://www.instagram.com/izolacefuk/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" class="ionicon" viewBox="0 0 512 512"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" fill="#0f121b"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" fill="#0f121b"/></svg></a></li>
                 <li class="flex w-8 transition-all hover:opacity-50"><a href="https://www.facebook.com/izolacefuk/?locale=cs_CZ" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" class="ionicon" viewBox="0 0 512 512"><path d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z" fill-rule="evenodd"/></svg></a></li>
                 <li class="flex w-8 transition-all hover:opacity-50"><a href="tel:+420773369966"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" width="2rem" viewBox="0 0 512 512"><path d="M451 374c-15.88-16-54.34-39.35-73-48.76-24.3-12.24-26.3-13.24-45.4.95-12.74 9.47-21.21 17.93-36.12 14.75s-47.31-21.11-75.68-49.39-47.34-61.62-50.53-76.48 5.41-23.23 14.79-36c13.22-18 12.22-21 .92-45.3-8.81-18.9-32.84-57-48.9-72.8C119.9 44 119.9 47 108.83 51.6A160.15 160.15 0 0083 65.37C67 76 58.12 84.83 51.91 98.1s-9 44.38 23.07 102.64 54.57 88.05 101.14 134.49S258.5 406.64 310.85 436c64.76 36.27 89.6 29.2 102.91 23s22.18-15 32.83-31a159.09 159.09 0 0013.8-25.8C465 391.17 468 391.17 451 374z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/></svg></a></li>
-                <li class="flex w-8 transition-all hover:opacity-50"><a href="mailto:scheinkonig@izolacefuk.cz"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" width="2rem" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg></a></li>
+                <li class="flex w-8 transition-all hover:opacity-50"><a href="mailto:info@izolacefuk.cz"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" width="2rem" viewBox="0 0 512 512"><rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M112 160l144 112 144-112"/></svg></a></li>
             </ul>
         </div>
     </header>
     <div class="w-full h-screen relative z-10">
         <h1 class="absolute flex text-center left-1/2 -translate-x-1/2 z-50 top-1/4 tracking-tight text-[#84cc16] font-semibold text-6xl uppercase p-6 sm:p-20 rounded-xl bg-gray-500/50 backdrop-blur-sm">Kus přírody na Vaší střeše!</h1>
-        <img id="foto1" alt="" class="w-full h-full object-cover">
+        <img loading='lazy'id="foto1" alt="" class="w-full h-full object-cover">
     </div>
     <section class="flex flex-col">
         <h1 id="onas" class="px-0 sm:px-[10vw] pt-28 text-[#84cc16] font-semibold  text-6xl uppercase self-center sm:self-start">O nás</h1>
@@ -38,7 +39,7 @@
         <h1 class="px-0 sm:px-[10vw] pt-28 text-[#84cc16] font-semibold  text-6xl uppercase w-min sm:w-auto text-center self-center sm:self-start">Zelené střechy</h1>
         <p class="flex self-center w-2/3 pt-10 text-center font-light text-xl">Zelené střechy se na rodinných domech, bytových domech, firemních objektech a o stavbách veřejné správy objevují čím dál častěji. Nejen, že skvěle vypadají, ale zároveň nabízí hned několik benefitů, které výrazným způsobem napomáhají ke zlepšení komfortu a kvality bydlení. A jaké to jsou? Nabízíme Vám výčet těch nejdůležitějších.</p>
         <div class="container w-11/12 sm:w-1/2 flex self-center py-4">
-            <img id="foto2" alt="" class="w-full h-full rounded-xl">
+            <img loading='lazy'id="foto2" alt="" class="w-full h-full rounded-xl">
         </div>
     </section>
     <section class="flex flex-col">
@@ -224,7 +225,7 @@
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-12 xl:grid-cols-4 px-[15vw] mt-10">
     <div class="flex flex-col items-center self-end">
         <div class="w-24 h-24 rounded-full overflow-hidden mb-6">
-            <img alt="Jiří Scheinkönig" id="scheinkonig" class="w-full object-cover relative -top-2">
+            <img loading='lazy'alt="Jiří Scheinkönig" id="scheinkonig" class="w-full object-cover relative -top-2">
         </div>
         <span class="text-2xl font-semibold">Jiří Scheinkönig</span>
         <span class="text-base mt-4">jednatel- marketing</span>
@@ -232,7 +233,7 @@
     </div>
     <div class="flex flex-col items-center">
         <div class="w-24 h-24 rounded-full overflow-hidden mb-8">
-            <img alt="Vladislav Štika" id="stika" class="w-full object-cover relative -top-4">
+            <img loading='lazy'alt="Vladislav Štika" id="stika" class="w-full object-cover relative -top-4">
         </div>
         <span class="text-2xl font-semibold">Vladislav Štika</span>
         <span class="text-base mt-4">jednatel- obchod</span>
@@ -240,7 +241,7 @@
     </div>
     <div class="flex flex-col items-center">
         <div class="w-24 h-24 rounded-full overflow-hidden mb-8">
-            <img alt="Michal Hübner" id="hubner" class="w-full object-cover relative -top-3">
+            <img loading='lazy'alt="Michal Hübner" id="hubner" class="w-full object-cover relative -top-3">
         </div>
         <span class="text-2xl font-semibold">Michal Hübner</span>
         <span class="text-base mt-4">vedoucí úseku výroby</span>
@@ -248,7 +249,7 @@
     </div>
     <div class="flex flex-col items-center">
         <div class="w-24 h-24 rounded-full overflow-hidden mb-8">
-            <img alt="Květa Fialová" id="fialova" class="w-full object-cover relative -top-3">
+            <img loading='lazy'alt="Květa Fialová" id="fialova" class="w-full object-cover relative -top-3">
         </div>
         <span class="text-2xl font-semibold">Květa Fialová</span>
         <span class="text-base mt-4">asistentka</span>
@@ -260,9 +261,9 @@
 <div class="px-[15vw] grid grid-cols-1 sm:grid-cols-2 gap-12 xl:grid-cols-4 mt-10">
     <div class="flex flex-col items-center">
         <span class="text-2xl font-semibold">Karlovarský Kraj</span>
-        <span><br>5. Května 714<br>
-            Sokolov<br>
-            356 01</span>
+        <span><br>Bergmannova 391<br>
+            Dolní Rychnov<br>
+            35604</span>
     </div>
     <div class="flex flex-col items-center">
         <span class="text-2xl font-semibold">Ústecký Kraj</span>
