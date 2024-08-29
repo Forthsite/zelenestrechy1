@@ -93,12 +93,12 @@
         <div class="flex flex-col w-full md:w-2/3 rounded-lg p-4 tracking-widest" style="box-shadow: 0 10px 40px rgba(82, 147, 203, .2);">
             <span class="text-sm text-[#2f3e68] font-semibold mb-7 outline-none">MÁTE ZÁJEM O NAŠE SLUŽBY?<br>
                 KONTAKTUJTE NÁS!</span>
-        <form action="" method="post" class="flex flex-col">
-            <span><input type="text" placeholder="jméno"  class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"></span>
-            <span><input type="text" placeholder="email"  class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"></span>
-            <span><input type="text" placeholder="telefon"  class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"></span>
-            <span><input type="text" placeholder="předmět"  class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"></span>
-            <textarea placeholder="zpráva" rows="8" class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"></textarea>
+        <form action="submit_phpmailer.php" method="post" class="flex flex-col">
+            <span><input type="text" name="jmeno" placeholder="jméno"  class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"></span>
+            <span><input type="text" name="email" placeholder="email"  class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"></span>
+            <span><input type="text" name="telefon" placeholder="telefon"  class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"></span>
+            <span><input type="text" name="predmet" placeholder="předmět"  class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"></span>
+            <textarea name="zprava" placeholder="zpráva" rows="8" class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"></textarea>
             <label for="Okres" class="ml-4">Okres</label>
             <select name="region" class="bg-transparent text-[#2f3e68] py-2 px-4 border tracking-widest rounded-md text-sm w-full transition-all mb-5 focus:ring-0 !outline-none focus:border-l-4 focus:border-l-blue-700" style="box-shadow: 0 2px 30px rgba(0, 186, 255, .3) !important;"><option value="">-- vyberte okres --</option>
                 <option value="Benešov">Benešov</option>
@@ -180,7 +180,7 @@
                 <option value="Žďár nad Sázavou">Žďár nad Sázavou</option>
             </select>
             <span class="flex gap-4 items-center">
-                <input type="checkbox" name="souhlas" id="" class="flex w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded">
+                <input required type="checkbox" name="souhlas" id="" class="flex w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded">
                 <label for="souhlas">Souhlasím se zpracováním osobních údajů</label>
             </span>
             <button type="submit" class="mx-auto transition-all py-2 px-14 bg-[#0f121bcc] border-4 mt-8 border-[#0f121b] text-white hover:bg-white hover:text-black hover:drop-shadow-xl w-fit">Odeslat</button>
